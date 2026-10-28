@@ -1,0 +1,4 @@
+numpy>=1.24
+sounddevice>=0.4.6
+evdev>=1.6; sys_platform == "linux"
+pynput>=1.7  # optional fallback for X11 sessions

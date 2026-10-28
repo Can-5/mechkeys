@@ -1,0 +1,12 @@
+[Unit]
+Description=Mechkeys mechanical keyboard sound simulator
+After=sound.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/mechkeys --no-gui
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

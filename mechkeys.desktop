@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Mechkeys
+Comment=Mechanical keyboard sound simulator
+Exec=python -m mechkeys
+Type=Application
+Terminal=false
+Categories=Audio;Utility;
+Icon=input-keyboard

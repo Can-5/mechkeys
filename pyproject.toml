@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mechkeys"
+version = "0.1.0"
+description = "Mechanical keyboard sound simulator for Linux - plays a click on every keypress."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "sounddevice>=0.4.6",
+    "evdev>=1.6; sys_platform == 'linux'",
+]
+
+[project.optional-dependencies]
+x11 = ["pynput>=1.7"]
+gui = []  # tkinter ships with python-tk system package
+
+[project.scripts]
+mechkeys = "mechkeys.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mechkeys*"]
