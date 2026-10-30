@@ -1,3 +1,4 @@
+#!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=Mechkeys
 Comment=Mechanical keyboard sound simulator
